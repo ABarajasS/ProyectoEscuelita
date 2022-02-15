@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --header-height: 80px;
+    --footer-height: 130px;
+    --lilac: rgb(236, 171, 236);
+    --purple: rgb(39, 1, 39);
+    --purple-for-leter: rgb(136, 26, 136);
+    --transparent-purple: rgba(255, 255, 255, 0.151);
+    --gray: rgb(236, 223, 223);
+    --leterr: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-image: linear-gradient(var(--purple),var(--lilac));
+    background-attachment: fixed;
+    color: var(--lilac);
+    font-family: var(--leterr);
+    height: 100%;}
+
+header {
+    height: var(--header-height);
+    flex: 0 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.questionlogo {
+    width: 70px;
+    height: 60px;
+}
+
+.michelogo {
+    height: 45px;
+    width: 130px;
+}
+
+h1 {
+    color:var(--lilac);
+}
+
+pre {
+    font-family: var(--leterr);
+    white-space: break-spaces;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-left: 20px;
+}
+
+details summary { 
+    cursor: pointer;
+  }
+
+.quizzz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+legend {
+    background-color: var(--transparent-purple);
+    padding: 3px 10px;
+}
+
+input, #dropdown, ::placeholder {
+    color: var(--purple-for-leter);
+    background-color: var(--gray);
+}
+
+.text-area {
+    background-color: var(--gray);
+    height: 80px; 
+    width: 250px; 
+}
+
+fieldset {
+    border-color: var(--lilac);
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 2px;
+    background-color: var(--transparent-purple);
+}
+
+label {
+    color: var(--purple-for-leter);
+    font-family: var(--leterr);
+}
+
+.radiobutton-option {
+    color: var(--lilac);
+}
+
+button {
+    background-color: var(--gray);
+    border-radius: 30;
+    font-family: var(--leterr);
+    width: 80px;
+}
+
+#momazo {
+    width: 100%
+}
+
+.memes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.momazoimg {
+    height: 200px;
+}
+
+footer {
+    display: flex;
+    flex: 0 0 auto;
+    color: var(--purple-for-leter);
+    height: var(--footer-height);
+}
+
+ul {
+    list-style-image: linear-gradient(to left bottom, var(--purple-for-leter), var(--lilac));
+}
+
+.facebook-icon {
+    height: 25px;
+    width: 25px;
+}

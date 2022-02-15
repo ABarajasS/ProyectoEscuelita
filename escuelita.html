@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoßt" content="width=device-width, initial-scale=1.0">
+    <title> Knowing about you</title>
+    <link rel="stylesheet" href="escuelita.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="http://127.0.0.1:5500/escuelita.html"> <img src="signos.png" class="questionlogo" alt="Signos de interrogación"> </a>
+            <h1> Hey! Let's fill this form to know you better! </h1> 
+            <a href="https://www.michelada.io/"> <img src="michelogo.png" class="michelogo" alt="Logo de michelada.op"> </a>
+        </nav>
+    </header>
+    <main>
+        <div class="div-for-pre">
+            <h2>What is this all about?</h2>
+            <pre>>This form was made for knowing you better!
+                
+It's recommended to be filled with honest information, but you can leave a blank answer if you don't wanna share that info c:
+                
+So, if you're ready, let's go!
+            </pre>
+        </div>
+        <details>
+        <summary>Click here to see the form!</summary>
+        <p id="instructions">Please field this form:</p>
+
+        <div class="quizzz">
+            <fieldset class="first-fieldset"> 
+                <legend>Basic info</legend>
+                    <label for="fullname" id="fullname-label">What's your full name? </label><input type="text" placeholder=" Full name"><br>
+                    <label for="nickname" id="nickname-label">How do you like to be called?  </label><input type="text" placeholder=" Nickname"><br>
+                    <label for="age" id="age-label">How old are you? </label> <input type="number" placeholder=" Age"><br>
+                    <label for="state" id="state-label">Where do you live? (State/city) </label> <input type="text" placeholder=" State/city"><br>
+                    <label for="birthday" id="birthday"> What's your birth date? </label> <input type="date"> 
+            </fieldset> <br>
+            
+            <fieldset class="second-fieldset">
+                <legend>More info</legend>
+                    <label for="beverage" id="beverage-label">What's your favorite beverage? </label><input type="text" placeholder=" Favorite beverage"><br>
+                    <label for="dog-cat" id="dog-cat">Which animal do you prefer?</label>  
+                        <label class="radiobutton-option"> <input id="dog" name="animal" type="radio" checked> Dog</label>
+                        <label class="radiobutton-option"> <input id="cat" name="animal" type="radio">Cat</label>
+                        <label class="radiobutton-option"> <input id="turtle" name="animal" type="radio">Turtle</label>
+                        <label class="radiobutton-option"> <input id="turtle" name="animal" type="radio">Turtle</label>
+                        <label class="radiobutton-option"> <input id="rabbit" name="animal" type="radio">Rabbit</label>
+                    <br>
+                    <label for="Favorite-movie" id="movie">What's your favorite movie genre?</label> 
+                        <select id="dropdown" name="moviepref" value="Select an option">
+                            <option disabled selected value>Select an option</option>
+                            <option value=1 >Comedy
+                            <option value=2 > Sci-fi
+                            <option value=3 >Romance
+                            <option value=4 >Horror
+                            <option value=5 >War
+                            <option value=6 >Thriller
+                        </select>
+                    <br>
+                    <label for="favorite-cuisine" id="cuisine"> What's your favorite food cuisine </label>
+                        <select id="dropdown" name="movie" required>
+                            <option disabled selected value>Select an option</option>
+                            <option value="mexican">Mexican</option>
+                            <option value="assian">Assian</option>
+                            <option value="italian">Italian</option>
+                            <option value="greek">Greek</option>
+                            <option value="peruvian">Peruvian</option>
+                        </select>
+                    <br>
+                    <label for="enjoy-being-">Have you enjoyed being a Padawan at michelada?</label>
+                        <label class="radiobutton-option"> <input name="user-enjoy" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
+                        <label class="radiobutton-option"> <input name="user-enjoy" value="dont-think" type="radio" class="input-radio"/>I don't think so</label>
+                        <label class="radiobutton-option"><input name="user-enjoy" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            </fieldset> <br>
+
+            <fieldset class="third-fieldset">
+                <legend>Extra info</legend>
+                    <label for=comments>Do you want to add something else about you?</label> <br> <textarea type="text" class="text-area" placeholder="Write your comments here"></textarea>
+            </fieldset> 
+                    <button type="submit"> Send your answers! </button>
+        </div>
+        </details>
+        <div id="momazo">
+            <details>
+                <summary>Also, here you'll find some memes related to QA :</summary>
+                <div class="memes">
+                    <a> <img src="testingneverfinishes.png" class="momazoimg" alt="Software Testing is Never Finished"> </a>
+                    <a> <img src="finallyover.png" class="momazoimg" alt="Testing is finally over"> </a>
+                    <a> <img src="hoursofdebugging.png" class="momazoimg" alt="Hours of Debugging"> </a>
+                    <a> <img src="releaseinprod.png" class="momazoimg" alt="Never Release on production"> </a>
+                </div>
+            </details>
+        </div>
+    </main>
+    <footer>If you wanna know about me, you can:
+        <ul> 
+            <li>Visit me in De la Libertad 131</li>
+            <li>Call me at 3121257730</li>
+            <li> 
+                <a href="mailto:aida.barajas@michelada.io?Subject=Heeeeey!! I wanna know more info about you" target="_top">Send me an email</a> 
+            </li>
+            <li> Add me as friend on
+                <a href="http://www.facebook.com/aida.a.barajas"> <img src="facebook-icon.png" class="facebook-icon" alt="Facebook logo"> </a>
+            </li>
+
+        </ul>
+    </footer>
+</body>
+</html>
