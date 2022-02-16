@@ -43,11 +43,16 @@ So, if you're ready, let's go!
                 <legend>More info</legend>
                     <label for="beverage" id="beverage-label">What's your favorite beverage? </label><input type="text" placeholder=" Favorite beverage"><br>
                     <label for="dog-cat" id="dog-cat">Which animal do you prefer?</label>  
-                        <label class="radiobutton-option"> <input id="dog" name="animal" type="radio" checked> Dog</label>
-                        <label class="radiobutton-option"> <input id="cat" name="animal" type="radio">Cat</label>
-                        <label class="radiobutton-option"> <input id="turtle" name="animal" type="radio">Turtle</label>
-                        <label class="radiobutton-option"> <input id="turtle" name="animal" type="radio">Turtle</label>
-                        <label class="radiobutton-option"> <input id="rabbit" name="animal" type="radio">Rabbit</label>
+                    <input id="dog" name="animal" type="radio" checked>    
+                    <label class="radiobutton-option" for="dog"> Dog</label>
+                    <input id="cat" name="animal" type="radio">    
+                    <label class="radiobutton-option" for="cat"> Cat</label>
+                    <input id="fish" name="animal" type="radio">
+                    <label class="radiobutton-option" for="fish"> Fish</label>
+                    <input id="turtle" name="animal" type="radio">
+                    <label class="radiobutton-option" for="turtle"> Turtle</label>
+                    <input id="rabbit" name="animal" type="radio">
+                    <label class="radiobutton-option" for="rabbit"> Rabbit</label>
                     <br>
                     <label for="Favorite-movie" id="movie">What's your favorite movie genre?</label> 
                         <select id="dropdown" name="moviepref" value="Select an option">
@@ -71,9 +76,12 @@ So, if you're ready, let's go!
                         </select>
                     <br>
                     <label for="enjoy-being-">Have you enjoyed being a Padawan at michelada?</label>
-                        <label class="radiobutton-option"> <input name="user-enjoy" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
-                        <label class="radiobutton-option"> <input name="user-enjoy" value="dont-think" type="radio" class="input-radio"/>I don't think so</label>
-                        <label class="radiobutton-option"><input name="user-enjoy" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+                    <input id="def" name="user-enjoy" value="definitely" type="radio" class="input-radio" checked/>    
+                    <label class="radiobutton-option" for="def"> Definitely</label>
+                    <input id="dont" name="user-enjoy" value="dont-think" type="radio" class="input-radio"/>
+                    <label class="radiobutton-option" for="dont"> I don't think so</label>
+                    <input id="not" name="user-enjoy" value="not-sure" type="radio" class="input-radio" />
+                    <label class="radiobutton-option" for="not">Not sure</label>
             </fieldset> <br>
 
             <fieldset class="third-fieldset">

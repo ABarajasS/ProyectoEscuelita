@@ -59,7 +59,7 @@ pre {
 
 main {
     flex: 1 0 auto;
-    margin-left: 20px;
+    padding: 0 20px;
 }
 
 details summary { 
@@ -70,7 +70,6 @@ details summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
 
 legend {
@@ -81,12 +80,56 @@ legend {
 input, #dropdown, ::placeholder {
     color: var(--purple-for-leter);
     background-color: var(--gray);
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input + label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+input + label::before {
+    content: "";
+    display: inline-block;
+    background: white;
+    border: 2px solid green;
+    border-radius: 100%;
+    height: 15px;
+    margin-right: 4px;
+    width: 15px;
+}
+
+input:checked + label {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+input:checked + label::before {
+    background-color: yellow;
+}
+
+input:focus {
+    color:rgb(231, 31, 98);
 }
 
 .text-area {
     background-color: var(--gray);
-    height: 80px; 
+    border-radius: 20px;
+    height: 80px;
     width: 250px; 
+    padding-left: 15px;
+    padding-top: 5px; 
+}
+
+.text-area:focus {
+    color:rgb(231, 31, 98);
 }
 
 fieldset {
@@ -106,11 +149,19 @@ label {
     color: var(--lilac);
 }
 
+.container input:checked ~ .checkmark {
+    background-color: purple;
+  }
+  
 button {
+    display: inline-block;
     background-color: var(--gray);
-    border-radius: 30;
+    border-color: transparent;
+    border-radius: 20px;
+    color: var(--purple-for-leter);
     font-family: var(--leterr);
-    width: 80px;
+    margin: 15px auto;
+    padding: 5px 15px;
 }
 
 #momazo {
